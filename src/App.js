@@ -24,7 +24,8 @@ function App(){
   useEffect(()=> {
     console.log("use Effect called");
     getCartcount(cartCount);
-  })
+     // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[])
 
   return (
     <>
